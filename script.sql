@@ -2,7 +2,7 @@
 CREATE DATABASE peliculas_db;
 
 --Ingresar a la Base de datos 'posts'
-\ c peliculas_db;
+\c peliculas_db;
 
 --Crear tabla 'peliculas' con los atributoss id, pelicula, anio_estreno, director
 CREATE TABLE peliculas(
@@ -20,11 +20,11 @@ CREATE TABLE reparto(
 );
 
 ---Importar archivos peliculas csv reparto csv
-\ copy peliculas
+\copy peliculas
 FROM
     'C:\Users\SSI\Desktop\peliculas.csv' csv header;
 
-\ copy reparto
+\copy reparto
 FROM
     'C:\Users\SSI\Desktop\reparto.csv' csv;
 
